@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: cache
+  cache:
+    cache-names: users_cache
+    caffeine:
+      spec: initialCapacity=50,maximumSize=10,expireAfterAccess=10s
+server:
+  port: 8001
